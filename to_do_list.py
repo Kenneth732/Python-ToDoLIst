@@ -7,3 +7,6 @@ class Task:
     def mark_completed(self):
         self.completed = True
 
+    def __str__(self):
+        status = "Done" if self.completed else "Not Done"
+        return f"Title: {self.title}\nDescription: {self.description}\nStatus: {status}"
