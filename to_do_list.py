@@ -34,3 +34,19 @@ class ToDoList:
 todo_list = ToDoList()
 
 
+# Add tasks to the list
+task1 = Task("Buy groceries", "Milk, eggs, bread")
+task2 = Task("Study Python", "Complete exercises")
+todo_list.add_task(task1)
+todo_list.add_task(task2)
+
+# View tasks
+print("Tasks:")
+todo_list.view_tasks()
+
+# Mark a task as completed
+todo_list.complete_task("Buy groceries")
+
+# View tasks again
+print("\nUpdated Tasks:")
+todo_list.view_tasks()
