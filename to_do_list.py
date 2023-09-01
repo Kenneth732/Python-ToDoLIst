@@ -10,3 +10,8 @@ class Task:
     def __str__(self):
         status = "Done" if self.completed else "Not Done"
         return f"Title: {self.title}\nDescription: {self.description}\nStatus: {status}"
+
+class ToDoList:
+    def __init__(self):
+        self.tasks = []
+
