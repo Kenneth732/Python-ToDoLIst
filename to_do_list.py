@@ -21,3 +21,16 @@ class ToDoList:
     def view_tasks(self):
         for task in self.tasks:
             print(task)
+
+    def complete_task(self, title):
+        for task in self.tasks:
+            if task.title == title:
+                task.mark_completed()
+                print(f"{title} marked as completed.")
+                return
+        print(f"Task with title '{title}' not found.")
+
+# Create a ToDoList object
+todo_list = ToDoList()
+
+
